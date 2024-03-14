@@ -1,0 +1,213 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    height: 100vh;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-left: 30px;
+
+}
+
+.header a{
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+}
+
+.logo-header{
+    height: 60px;
+}
+
+.header a:hover{
+    font-size: 26px;
+    color:#c51111;
+    transition: 0.5 ease-in;
+}
+.box-video{
+    position: fixed;
+    top:0;
+    z-index: -1;
+}
+
+video{
+    position: fixed;
+    top: 0;
+    min-height: 100%;
+    min-width: 100%;
+}
+
+.video-mask{
+    position: fixed;
+    top: 0;
+    min-height: 100%;
+    min-width: 100%;
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+}
+
+
+.container{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    padding: 100px;
+    justify-content: space-around;
+}
+
+.main-box{
+    width: 40%;
+    padding: 30px;
+}
+
+.logo-main{
+    height: 200px;
+    margin-bottom: 20px;
+}
+
+p{
+    font-size: 20px;
+    color: white;
+}
+
+button{
+    color: white;
+    background-color: #c51111;
+    height: 50px;
+    width: 200px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    text-transform: uppercase;
+    margin-top: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.logo-mario-luigi{
+    height: 500px;
+}
+
+.form{
+    background-color: white;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    position: fixed;
+    left: -300px;
+    top: 30%;
+    padding: 20px;
+    border-radius: 5px;
+    transition: left 1.5s ease-in-out;
+}
+
+.form-mask{
+    visibility:hidden;
+    position: fixed;
+    top: 0;
+    min-height: 100vh;
+    min-width: 100vw;
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+    transition: visibility 1s ease-in-out;
+}
+
+input{
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    padding-left: 5px;
+    outline-color: #18d80f;
+}
+
+textarea{
+    width: 270px;
+    height: 100px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    padding-left: 5px;
+    padding-top: 5px;
+    outline-color: #18d80f;
+}
+.whatsapp{
+    height: 60px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 30px;
+    cursor: pointer;
+}
+
+
+
+/* RESPONSIVIDADE */
+
+@media (max-width:900px){
+   
+    .logo-header{
+    display: none;
+}
+
+    p{
+    display: none;
+}
+.header{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0;
+}
+
+.header a{
+    font-size: 18px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.main-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logos-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-mario-luigi{
+    width: 80vw;
+    height: auto;
+    padding: 15px;
+}
+
+.whatsapp{
+    margin: 10px;
+    width: 30px;
+    height: auto;
+}
+
+.contact{
+    height: 40px;
+}
+.logo-main{
+    margin-bottom: 0px;
+    height: 150px;
+}
+
+}
