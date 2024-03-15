@@ -1,5 +1,5 @@
 <img src="MockUp Mario.png">
-<a href="https://chipper-lebkuchen-196144.netlify.app/">
+<a href="https://chipper-lebkuchen-196144.netlify.app/" target="blank"></a>
 <div align="center"><h1>Mario Bros</h1></div>
 
 ## 📝 Sobre
